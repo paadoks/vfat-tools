@@ -20,7 +20,7 @@ async function main() {
    const prices = await getBscPrices();
 
    let rewardsPerWeek = 0;
-   const startBlock = await MUSCLE_CHEF.startBlock();
+   const startBlock = 1;
    const currentBlock = await App.provider.getBlockNumber();
 
    if(startBlock > currentBlock){
